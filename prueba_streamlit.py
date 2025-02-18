@@ -7,7 +7,7 @@ from folium.plugins import MarkerCluster
 # Cargar datos
 @st.cache_data
 def load_data():
-    df = pd.read_csv("DATASET_FINAL.csv")
+    df = pd.read_json("DATASET_FINAL.json")
     return df
 
 data = load_data()
